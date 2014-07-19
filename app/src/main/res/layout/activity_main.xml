@@ -2,7 +2,10 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    
+    <!----- Layout for the cards is a Linear Layout enclosed within a Frame Layout ---->
+    
+    <!---- First card starts here ---->
     <LinearLayout
         android:id="@+id/linlayout1"
         android:layout_width="match_parent"
@@ -15,6 +18,13 @@
         android:layout_gravity="top"
         android:clickable="true"
      >
+     
+     <!---- To define the elements within the first card, we have a RelativeLayout for the 3 enclosed elements
+            which are :
+            1. ImageView
+            2. Medium TextView
+            3. Plain TextView
+    -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -63,11 +73,10 @@
                 android:layout_alignLeft="@+id/textView1"
                 android:layout_alignStart="@+id/textView1" />
         </RelativeLayout>
-
-        <!-- Card Contents go here -->
-
     </LinearLayout>
 
+    <!---- Second card starts here, same format as first card --->
+    
     <LinearLayout
         android:id="@+id/linlayout2"
         android:layout_width="match_parent"
